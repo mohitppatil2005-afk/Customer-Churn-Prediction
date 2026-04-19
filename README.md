@@ -1,11 +1,24 @@
+⚡ Deployed ML web application for real-time customer churn prediction.
 # Customer Churn Prediction Web App
 
 Machine learning-based customer churn prediction web application built with Flask, enabling real-time churn prediction and probability analysis.
 
 ## 🚀 Live Demo
-👉 https://customer-churn-prediction-ya86.onrender.com/
+👉 [Live App](https://customer-churn-prediction-ya86.onrender.com/)
+## 📸 Screenshots
+
+### 🔹 Customer Input Form
+User-friendly interface to enter customer details.
+
+<img width="900" alt="Customer Input Form" src="https://github.com/user-attachments/assets/753cfa5b-c022-4a76-9b50-acb70ee8135f" />
 
 ---
+
+### 🔹 Prediction Result
+Displays churn prediction along with probability.
+
+<img width="900" alt="Prediction Result" src="https://github.com/user-attachments/assets/97d30d25-83aa-4c2c-ba11-11341a8c04bd" />
+
 
 ## 📖 Overview
 This project predicts whether a telecom customer is likely to churn (leave the service) based on input features such as tenure, monthly charges, and services used.
