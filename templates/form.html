@@ -1,1 +1,197 @@
+{% extends "base.html" %}
 
+{% block content %}
+
+<div class="form-container">
+
+<h2>Customer Information Form</h2>
+
+<form action="/predict" method="post">
+
+<h3>Basic Information</h3>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Tenure:</label>
+        <input type="number" name="tenure" min="0" required>
+    </div>
+
+<div class="form-group">
+    <label>Monthly Charges:</label>
+    <input type="number" step="0.01" name="MonthlyCharges" min="0" required>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Total Charges:</label>
+        <input type="number" step="0.01" name="TotalCharges" min="0" required>
+    </div>
+</div>
+
+<h3>Customer Details</h3>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="">Select</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Senior Citizen:</label>
+    <select name="SeniorCitizen" required>
+        <option value="">Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Partner:</label>
+        <select name="Partner" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Dependents:</label>
+    <select name="Dependents" required>
+        <option value="">Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+</div>
+
+</div>
+
+<h3>Services</h3>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Multiple Lines:</label>
+        <select name="MultipleLines" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Online Security:</label>
+    <select name="OnlineSecurity" required>
+        <option value="">Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Online Backup:</label>
+        <select name="OnlineBackup" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Device Protection:</label>
+    <select name="DeviceProtection" required>
+        <option value="">Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Tech Support:</label>
+        <select name="TechSupport" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Streaming TV:</label>
+    <select name="StreamingTV" required>
+        <option value="">Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Streaming Movies:</label>
+        <select name="StreamingMovies" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+</div>
+
+<h3>Plan Details</h3>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Contract:</label>
+        <select name="Contract" required>
+            <option value="">Select</option>
+            <option>Month-to-month</option>
+            <option>One year</option>
+            <option>Two year</option>
+        </select>
+    </div>
+
+<div class="form-group">
+    <label>Internet Service:</label>
+    <select name="InternetService" required>
+        <option value="">Select</option>
+        <option>DSL</option>
+        <option>Fiber optic</option>
+        <option>No</option>
+    </select>
+</div>
+
+</div>
+
+<div class="form-row">
+    <div class="form-group">
+        <label>Payment Method:</label>
+        <select name="PaymentMethod" required>
+            <option value="">Select</option>
+            <option>Electronic check</option>
+            <option>Mailed check</option>
+            <option>Bank transfer (automatic)</option>
+            <option>Credit card (automatic)</option>
+        </select>
+    </div>
+</div>
+
+<button type="submit" class="btn">Predict</button>
+
+</form>
+
+</div>
+
+{% endblock %}

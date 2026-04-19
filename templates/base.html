@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Predictor</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav-container">
+        <h2 class="logo">Churn Predictor</h2>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/form">Predict</a>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Churn Prediction Project</p>
+    <p>Built by Mohit Prashant Patil</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="home-container">
+
+<h1>Customer Churn Prediction</h1>
+
+<p class="description">
+    Predict whether a telecom customer is likely to churn using a machine learning model.
+</p>
+
+<!-- Call to Action -->
+<a href="/form">
+    <button class="btn">Start Prediction</button>
+</a>
+
+<br><br>
+
+<!-- Features -->
+<div class="features">
+    <h3>Features:</h3>
+    <ul>
+        <li>Uses IBM Telco Customer Churn Dataset</li>
+        <li>Logistic Regression Model</li>
+        <li>Instant Prediction</li>
+    </ul>
+</div>
+
+<!-- Small Info -->
+<p class="info">
+    This tool helps businesses identify customers who are likely to leave and take preventive action.
+</p>
+</div>
+
+{% endblock %}

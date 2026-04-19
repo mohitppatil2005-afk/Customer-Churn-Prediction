@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="home-container">
+
+<h2>Prediction Result</h2>
+
+<h3>{{ result }}</h3>
+<p>Churn Probability: {{ prob }}%</p>
+
+
+<br>
+
+<a href="/form" class="btn">Check Another Customer</a>
+</div>
+
+{% endblock %}
